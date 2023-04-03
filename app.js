@@ -12,8 +12,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("uploads"));
 app.options("*", CORS());
 
-app.use("/uploads", express.static("uploads"));
-
 const PORT = 3001;
 
 app.use(CORS(), userRoutes);
